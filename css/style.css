@@ -14,6 +14,14 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
     /* 1rem == 10px */
+
+    /* Propiedad que nos permite una navegación más suavizada */
+    scroll-behavior: smooth;
+}
+
+/* Propiedad que define la posición en donde se detendrá al alcnazar el ID */
+section[id] {
+    scroll-margin-top: 2rem;
 }
 
 *,
@@ -238,6 +246,7 @@ img {
 .slogan {
     margin-top: 1rem;
     text-align: center;
+    color: var(--blanco);
 }
 
 @media (min-width: 768px) {
@@ -399,6 +408,7 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    margin-top: 1rem;
 }
 
 @media (min-width: 768px) {
